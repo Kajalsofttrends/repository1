@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>School Admission Form</title>
+</head>
+<body style="background-color:powderblue">
+<a href="circle.html">go to circle page</a>
+<form name="myForm" action="D:/New folder/admission.html"  method="post">
+<img src="D:/picture/schoollogo.jpg" width="100" height="100">
+ <h1 style="text-align:center">JUBILEE HILLS PUBLIC SCHOOL ADMISSION FORM</h1>
+<br>
+<br>
+<p> * Please fill all details carefully.</p>
+First Name:<br>
+<input type="text" name="firstname" id="txtfirstname" required><br>
+<p id="fn"></p><br>
+Last Name:<br>
+<input type="text" name="lastname id="txtlastname" required><br>
+<p id="ln"></p><br>
+Father's Name:<br>
+<input type="text" name="fathername id="txtfathername" required><br>
+<p id="fan"></p>
+Mother's Name:<br>
+<input type="text" name="mothername id="txtmothername" required><br>
+<p id="mn"></p><br>
+
+
+Phone number:<br>
+<input type="number" name="num" id="telnumber" min="1000000000" max="9999999999" required><br><br>
+<p id="phn"></p>
+Email id:<br>
+<input type="mail" id="email" required><br><br>
+<p id="eml"></p>
+<p>Enter date of birth</p>
+<input type="date" id="bday" required><br><br>
+<p id="dob"></p>
+<p>Choose gender</p>
+<input type="radio" name="gender" value="male"> Male<br>
+<input type="radio" name="gender" value="female"> Female<br>
+<input type="radio" name="gender" value="other"> Other<br><br>
+
+
+<p>Choose Nationality</p>
+<input type="radio" name="nation" value="indian">Indian<br>
+<input type="radio" name="nation" value="other">others<br><br>
+
+
+<p>Choose state</p>
+<select id="state">
+<option value="select">select</option>
+<option value="Bihar">Bihar</option>
+<option value="Gujarat">Gujarat</option>
+<option value="Haryana">Haryana</option>
+<option value="Jammu">Jammu</option>
+<option value="Kerala">Kerala</option>
+<option value="Karnataka">Karnataka</option>
+<option value="Maharastra">Maharastra</option>
+<option value="Orissa">Orissa</option>
+</select><br><br>
+<p id="slt"></p>
+
+<p>Enter your pin</p>
+<input type="number" name="pin" id="numpin" required><br>
+<p id="pn"></p><br>
+
+
+<p> Signature:(should be in dimension 80X20)<br>
+<input type="file" id="sign" required><br>
+<p id="sgn"></p><br>
+
+
+<button onclick="myFunction()">button</button>
+</form>
+
+<script>
+function myFunction(){
+     var a=document.getElementById("txtfirstname");
+	 if(!a.checkValidity()){
+	    document.getElementById("fn").innerHTML=a.validateMessage;
+		}else{
+	    document.getElementById("fn").innerHTML="";
+		}
+		
+     var b=document.getElementById("txtlastname");
+	  if(!b.checkValidity()){
+	    document.getElementById("ln").innerHTML=b.validateMessage;
+		}else{
+	    document.getElementById("ln").innerHTML="";
+		}
+     var c=document.getElementById("txtfathername").value;
+	  if(!c.checkValidity()){
+	    document.getElementById("fan").innerHTML=c.validateMessage;
+		}else{
+	    document.getElementById("fan").innerHTML="";
+		}
+     var d=document.getElementById("txtmothername").value;
+	  if(!d.checkValidity()){
+	    document.getElementById("mn").innerHTML=d.validateMessage;
+		}else{
+	    document.getElementById("mn").innerHTML="";
+		}
+     var e=document.getElementById("telnumber").value;
+	  if(!e.checkValidity()){
+	    document.getElementById("phn").innerHTML=e.validateMessage;
+		}else{
+	    document.getElementById("phn").innerHTML="";
+		}
+     var f=document.getElementById("email").value;
+	  if(!f.checkValidity()){
+	    document.getElementById("eml").innerHTML=f.validateMessage;
+		}else{
+	    document.getElementById("eml").innerHTML="";
+		}
+     var g=document.getElementById("bday").value;
+	  if(!g.checkValidity()){
+	    document.getElementById("dob").innerHTML=g.validateMessage;
+		}else{
+	    document.getElementById("dob").innerHTML="";
+		}
+	 var z=document.getElementById("state").value;
+	  if(!z.checkValidity()){
+	    document.getElementById("slt").innerHTML=z.validateMessage;
+		}else{
+	    document.getElementById("slt").innerHTML="";
+		}
+     var h=document.getElementById("numpin").value;
+	  if(!h.checkValidity()){
+	    document.getElementById("pn").innerHTML=h.validateMessage;
+		}else{
+	    document.getElementById("pn").innerHTML="";
+		}
+     var i=document.getElementById("sign").value;
+	  if(!i.checkValidity()){
+	    document.getElementById("sgn").innerHTML=i.validateMessage;
+		}else{
+	    document.getElementById("sgn").innerHTML="";
+		}
+/*if(a==""){
+         alert("first name should not be empty");
+		 return false;
+		 }
+if(b==""){
+         alert("last name should not be empty");
+		 return false;
+		 }
+if(c==""){
+         alert("father's name should not be empty");
+		 return false;
+		 }
+if(d==""){
+         alert("mother's name should not be empty");
+		 return false;
+		 }
+if(e==""){
+         alert("phone number should not be empty");
+		 return false;
+		 }
+if(f==""){
+         alert("mail address should not be empty");
+		 return false;
+		 }
+if(g==""){
+         alert("date of birth should not be empty");
+		 return false;
+		 }
+if(x==""){
+         alert("choose state it should not be empty");
+		 return false;
+		 }
+		 
+if(h==""){
+         alert("pin no should not be empty");
+		 return false;
+		 }
+if(i==""){
+         alert("signature should not be empty");
+		 return false;
+		 }*/
+}
+
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
